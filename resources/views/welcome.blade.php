@@ -80,8 +80,10 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="link">
+                    @foreach ($links as $link)
+                        <a href="{{$link->url}}">{{$link->title}}</a>
+                    @endforeach
                 </div>
 
                 <div class="links">
